@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yusf | EasyLink</title>
+    <title>Javahir | EasyLink</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
@@ -54,11 +54,11 @@
         
         .shooting-star {
             position: absolute;
-            width: 6px;
-            height: 6px;
-            background: linear-gradient(45deg, #ffffff, #93c5fd);
-            border-radius: 50%;
-            box-shadow: 0 0 10px 2px rgba(147, 197, 253, 0.6);
+            width: 12px;
+            height: 12px;
+            background: #ffffff;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            filter: drop-shadow(0 0 6px #ffffff) drop-shadow(0 0 15px #93c5fd);
             opacity: 0;
         }
         
@@ -66,32 +66,46 @@
             content: '';
             position: absolute;
             top: 50%;
-            right: 100%;
-            width: 80px;
+            right: 90%;
+            width: 250px;
             height: 2px;
-            background: linear-gradient(90deg, transparent, rgba(147, 197, 253, 0.8), white);
+            background: linear-gradient(90deg, transparent 0%, rgba(147, 197, 253, 0.3) 40%, rgba(255, 255, 255, 0.8) 80%, #ffffff 100%);
             transform: translateY(-50%);
+            border-radius: 2px;
+        }
+
+        .shooting-star::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: 90%;
+            width: 180px;
+            height: 10px;
+            background: linear-gradient(90deg, transparent 0%, rgba(147, 197, 253, 0.15) 50%, rgba(255, 255, 255, 0.5) 100%);
+            transform: translateY(-50%);
+            filter: blur(5px);
+            border-radius: 10px;
         }
         
         .shooting-star:nth-child(1) {
-            top: -10px;
+            top: -20px;
             left: 20%;
             animation: shoot1 8s infinite ease-in;
             animation-delay: 0s;
         }
         
         .shooting-star:nth-child(2) {
-            top: -10px;
+            top: -20px;
             left: 60%;
-            animation: shoot2 10s infinite ease-in;
-            animation-delay: 3s;
+            animation: shoot2 11s infinite ease-in;
+            animation-delay: 3.5s;
         }
         
         .shooting-star:nth-child(3) {
-            top: -10px;
+            top: -20px;
             left: 85%;
-            animation: shoot3 12s infinite ease-in;
-            animation-delay: 6s;
+            animation: shoot3 13s infinite ease-in;
+            animation-delay: 7s;
         }
         
         @keyframes shoot1 {
@@ -142,9 +156,9 @@
 
     <div class="flex flex-col items-center mb-8 sm:mb-10 z-10 animate-fade-in-down">
         <img src="https://github.com/yusf.png" alt="Yusf" class="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover ring-4 ring-white/20 shadow-2xl mb-4 bg-slate-800" onerror="this.style.display='none'">
-        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Yusf</h1>
+        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Javahir</h1>
         <p class="text-blue-100/80 mt-2 text-center max-w-xs text-sm sm:text-base">
-            Hi!
+            Becoming.
         </p>
     </div>
 
@@ -162,7 +176,6 @@
     </footer>
 
     <script>
-        // Generate random stars
         function createStars() {
             const starCount = 150;
             const body = document.body;
