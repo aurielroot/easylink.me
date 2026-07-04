@@ -1,16 +1,13 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yusf | EasyLink</title>
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- FontAwesome CDN (İkonlar için) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <style>
-        /* Pürüzsüz Animasyonlar */
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(30px) scale(0.95); }
             to { opacity: 1; transform: translateY(0) scale(1); }
@@ -28,7 +25,6 @@
             animation: fadeInDown 0.8s ease-out forwards;
         }
         
-        /* Hover Efektleri */
         .link-card {
             transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
@@ -43,18 +39,15 @@
             color: white;
         }
         
-        /* Arkaplan Glow Efekti */
         .glow-purple { filter: blur(100px); }
         .glow-blue { filter: blur(100px); }
     </style>
 </head>
 <body class="min-h-screen bg-gradient-to-br from-gray-900 via-slate-900 to-black text-white flex flex-col items-center justify-start py-12 px-4 relative overflow-x-hidden">
 
-    <!-- Arkaplan Işık Efektleri -->
     <div class="absolute top-0 left-1/4 w-96 h-96 bg-purple-600/30 rounded-full glow-purple pointer-events-none"></div>
     <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-600/30 rounded-full glow-blue pointer-events-none"></div>
 
-    <!-- Profil Kısmı -->
     <div class="flex flex-col items-center mb-10 z-10 animate-fade-in-down">
         <div class="w-28 h-28 rounded-full bg-gradient-to-tr from-purple-500 to-blue-500 p-1 mb-4 shadow-lg shadow-purple-500/30">
             <div class="w-full h-full rounded-full bg-gray-900 flex items-center justify-center text-4xl font-bold">
@@ -63,19 +56,16 @@
         </div>
         <h1 class="text-3xl font-bold tracking-tight">Yusf</h1>
         <p class="text-gray-400 mt-2 text-center max-w-xs">
-            Geliştirici, tasarımcı ve teknoloji tutkunu. Tüm bağlantılarım aşağıda.
+            Developer, designer, and tech enthusiast. All my links are below.
         </p>
     </div>
 
-    <!-- Linklerin Yükleneceği Konteyner -->
     <div id="links-container" class="w-full max-w-md space-y-4 z-10">
-        <!-- Kartlar JavaScript ile buraya eklenecek -->
         <div class="text-center text-gray-500 py-10" id="loading-text">
             <i class="fa-solid fa-spinner fa-spin text-2xl"></i>
         </div>
     </div>
 
-    <!-- Footer -->
     <footer class="mt-16 mb-6 text-center z-10 animate-fade-in-up" style="animation-delay: 1s;">
         <p class="text-gray-500 text-sm tracking-wide">
             <span class="font-semibold text-gray-300">easylink.me</span> by 
@@ -84,16 +74,14 @@
     </footer>
 
     <script>
-        // links.json dosyasını oku ve kartları oluştur
         fetch('links.json')
             .then(response => response.json())
             .then(data => {
                 const container = document.getElementById('links-container');
                 const loadingText = document.getElementById('loading-text');
-                loadingText.style.display = 'none'; // Yükleme yazısını gizle
+                loadingText.style.display = 'none';
 
                 data.forEach((link, index) => {
-                    // Gecikme süresi hesapla (Sırayla gelme efekti için)
                     const delay = 0.2 + (index * 0.1); 
 
                     const cardHTML = `
@@ -121,8 +109,8 @@
                 });
             })
             .catch(error => {
-                console.error('JSON okunurken hata oluştu:', error);
-                document.getElementById('loading-text').innerText = 'Bağlantılar yüklenemedi.';
+                console.error('Error fetching JSON:', error);
+                document.getElementById('loading-text').innerText = 'Failed to load links.';
             });
     </script>
 </body>
