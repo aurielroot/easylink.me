@@ -1,42 +1,34 @@
 [
   {
     "id": 1,
-    "platform": "GitHub",
-    "username": "@yusf",
-    "url": "https://github.com/yusf",
-    "icon": "fa-brands fa-github",
-    "gradient": "from-gray-700 to-gray-900"
-  },
-  {
-    "id": 2,
-    "platform": "Twitter / X",
-    "username": "@yusf",
-    "url": "https://twitter.com/yusf",
-    "icon": "fa-brands fa-x-twitter",
-    "gradient": "from-gray-800 to-black"
-  },
-  {
-    "id": 3,
-    "platform": "LinkedIn",
-    "username": "Yusf",
-    "url": "https://linkedin.com/in/yusf",
-    "icon": "fa-brands fa-linkedin-in",
-    "gradient": "from-blue-600 to-blue-800"
-  },
-  {
-    "id": 4,
     "platform": "Instagram",
-    "username": "@yusf",
-    "url": "https://instagram.com/yusf",
+    "username": "@djavaxhir",
+    "url": "https://www.instagram.com/djavaxhir/",
     "icon": "fa-brands fa-instagram",
     "gradient": "from-purple-600 via-pink-500 to-orange-400"
   },
   {
-    "id": 5,
-    "platform": "WEBSITE",
-    "username": "yusf.dev",
-    "url": "https://yusf.dev",
-    "icon": "fa-solid fa-globe",
-    "gradient": "from-emerald-500 to-teal-700"
+    "id": 2,
+    "platform": "TikTok",
+    "username": "@djavaxhir",
+    "url": "https://www.tiktok.com/@djavaxhir",
+    "icon": "fa-brands fa-tiktok",
+    "gradient": "from-gray-900 via-pink-600 to-cyan-400"
+  },
+  {
+    "id": 3,
+    "platform": "X",
+    "username": "@cwhxys",
+    "url": "https://x.com/cwhxys",
+    "icon": "fa-brands fa-x-twitter",
+    "gradient": "from-gray-800 to-black"
+  },
+  {
+    "id": 4,
+    "platform": "LinkedIn",
+    "username": "Cəvahir Allahverdiyeva",
+    "url": "https://www.linkedin.com/in/cəvahir-allahverdiyeva-3b4a04414/",
+    "icon": "fa-brands fa-linkedin-in",
+    "gradient": "from-blue-600 to-blue-800"
   }
 ]
