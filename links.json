@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "platform": "GitHub",
+    "username": "@yusf",
+    "url": "https://github.com/yusf",
+    "icon": "fa-brands fa-github",
+    "gradient": "from-gray-700 to-gray-900"
+  },
+  {
+    "id": 2,
+    "platform": "Twitter / X",
+    "username": "@yusf",
+    "url": "https://twitter.com/yusf",
+    "icon": "fa-brands fa-x-twitter",
+    "gradient": "from-gray-800 to-black"
+  },
+  {
+    "id": 3,
+    "platform": "LinkedIn",
+    "username": "Yusf",
+    "url": "https://linkedin.com/in/yusf",
+    "icon": "fa-brands fa-linkedin-in",
+    "gradient": "from-blue-600 to-blue-800"
+  },
+  {
+    "id": 4,
+    "platform": "Instagram",
+    "username": "@yusf",
+    "url": "https://instagram.com/yusf",
+    "icon": "fa-brands fa-instagram",
+    "gradient": "from-purple-600 via-pink-500 to-orange-400"
+  },
+  {
+    "id": 5,
+    "platform": "Kişisel Web Sitesi",
+    "username": "yusf.dev",
+    "url": "https://yusf.dev",
+    "icon": "fa-solid fa-globe",
+    "gradient": "from-emerald-500 to-teal-700"
+  }
+]
